@@ -1,0 +1,15 @@
+mat-card-content{
+    text-align: center;
+}
+h6{
+    font-size: 30px;
+}
+.social a{
+    font-size: 40px;
+    margin: 15px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.social a:hover{
+    transform: scale(1.6);
+}

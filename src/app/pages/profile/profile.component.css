@@ -1,0 +1,31 @@
+.example-card {
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+.mat-card{
+    color: rgb(77, 73, 73);
+    max-height: max-content;
+}
+section {
+    background-color: rgb(224, 224, 190);
+    border-radius: 0 0 20px 20px;
+    height: 550px;
+  }
+  .about {
+    font-size: x-large;
+    text-align: center;
+    padding-top: 50px;
+    height: 92vh;
+  }
+  span {
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgb(30, 129, 63);
+  }
+  p {
+    padding: 30px;
+    color: black;
+  }
+  section{
+      background-color:lightskyblue;
+  }

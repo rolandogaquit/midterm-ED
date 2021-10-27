@@ -2,13 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
 })
-
-export class AppComponent implements OnInit {
-  title = 'Angular';
+export class ProfileComponent implements OnInit {
   currentNav: string = '';
   constructor(private route: Router) { }
 

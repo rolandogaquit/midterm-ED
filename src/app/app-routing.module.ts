@@ -1,19 +1,30 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { SkillsComponent } from './skills/skills.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+
+import { MatButtonModule } from "@angular/material/button";
+import { MatIconModule } from "@angular/material/icon";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatListModule } from "@angular/material/list";
+import { MatToolbarModule } from "@angular/material/toolbar";
 
 const routes: Routes = [
-  {path: 'about', component: AboutComponent},
-  {path: 'gallery', component: GalleryComponent},
-  {path: 'skills', component: SkillsComponent},
-  {path: '', component: HomeComponent}
+  {path: "profile", component: ProfileComponent},
+  {path: "gallery", component: GalleryComponent},
+  {path: "contact", component: ContactComponent},
+  {path: "**", redirectTo: "profile"}
 ];
 
 @NgModule({
- imports: [RouterModule.forRoot(routes)],
+ imports: [
+  MatButtonModule,
+  MatIconModule,
+  MatSidenavModule,
+  MatListModule,
+  MatToolbarModule,
+  RouterModule.forRoot(routes)],
  exports: [RouterModule]
 })
 export class AppRoutingModule { }
